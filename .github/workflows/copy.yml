@@ -1,8 +1,14 @@
-on: [pull_request, push]
-  branches:    
-    - master
-  paths:
-    - 'doc/**'
+on:
+  push:
+    branches:    
+      - master
+    paths:
+      - 'doc/**'
+  pull_request:
+    branches:    
+      - master
+    paths:
+      - 'doc/**'
 name: Copy Md
 jobs:
   all:
