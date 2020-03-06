@@ -18,8 +18,9 @@ jobs:
     - uses: actions/checkout@master
     - name: copyTo
       uses: andstor/copycat-action@v2.0.0
-      personal_token: ${{ secrets.PERSONAL_TOKEN }}
-      src_path: doc/
-      dst_path: /projects/son1
-      dst_owner: ArthusLiang
-      dst_repo_name: gather
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: doc/
+        dst_path: /projects/son1
+        dst_owner: ArthusLiang
+        dst_repo_name: gather
