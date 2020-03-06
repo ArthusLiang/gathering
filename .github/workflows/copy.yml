@@ -21,6 +21,6 @@ jobs:
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: doc/
-        dst_path: /projects/son1
+        dst_path: /projects/son1/
         dst_owner: ArthusLiang
         dst_repo_name: gather
