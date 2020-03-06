@@ -24,3 +24,5 @@ jobs:
         dst_path: /projects/
         dst_owner: ArthusLiang
         dst_repo_name: gather
+        username: yulhuang
+        email: 531151995@qq.com
