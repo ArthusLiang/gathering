@@ -19,7 +19,7 @@ jobs:
     - name: copyTo
       uses: andstor/copycat-action@v2.0.0
       with:
-        personal_token: ${{ secrets.GITHUB_TOKEN }}
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: doc/
         dst_path: /projects/
         dst_owner: ArthusLiang
