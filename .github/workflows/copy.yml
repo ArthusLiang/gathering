@@ -20,8 +20,8 @@ jobs:
       uses: andstor/copycat-action@v2.0.0
       with:
         personal_token: ${{ secrets.copykey }}
-        src_path: doc/
-        dst_path: /projects/
+        src_path: doc/.
+        dst_path: /projects/gathering
         dst_owner: ArthusLiang
         dst_repo_name: gather
         username: yulhuang
