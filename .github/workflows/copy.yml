@@ -11,8 +11,8 @@ on:
       - 'doc/**'
 name: Copy Md
 jobs:
-  all:
-    name: Copy Md
+  jobZH:
+    name: Copy Chinese Documents
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@master
@@ -20,8 +20,23 @@ jobs:
       uses: andstor/copycat-action@v2.0.0
       with:
         personal_token: ${{ secrets.copykey }}
-        src_path: doc/.
-        dst_path: /projects/gathering
+        src_path: doc/zh_CN/.
+        dst_path: /projects/zh_CN/gathering
+        dst_owner: ArthusLiang
+        dst_repo_name: gather
+        username: yulhuang
+        email: 531151995@qq.com
+  jobEN:
+    name: Copy English Documents
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@master
+    - name: copyTo
+      uses: andstor/copycat-action@v2.0.0
+      with:
+        personal_token: ${{ secrets.copykey }}
+        src_path: doc/en_US/.
+        dst_path: /projects/en_US/gathering
         dst_owner: ArthusLiang
         dst_repo_name: gather
         username: yulhuang
