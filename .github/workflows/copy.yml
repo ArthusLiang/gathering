@@ -21,7 +21,7 @@ jobs:
       with:
         personal_token: ${{ secrets.copykey }}
         src_path: doc/zh_CN/.
-        dst_path: /projects/zh_CN/gathering
+        dst_path: /doc/_posts/zh_cn/gathering
         dst_owner: ArthusLiang
         dst_repo_name: gather
         username: yulhuang
@@ -36,7 +36,7 @@ jobs:
       with:
         personal_token: ${{ secrets.copykey }}
         src_path: doc/en_US/.
-        dst_path: /projects/en_US/gathering
+        dst_path: /doc/_posts/en_us/gathering
         dst_owner: ArthusLiang
         dst_repo_name: gather
         username: yulhuang
