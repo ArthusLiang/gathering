@@ -20,7 +20,7 @@ jobs:
       uses: andstor/copycat-action@v2.0.0
       with:
         personal_token: ${{ secrets.copykey }}
-        src_path: doc/zh_CN/.
+        src_path: doc/zh_cn/.
         dst_path: /doc/_posts/zh_cn/gathering
         dst_owner: ArthusLiang
         dst_repo_name: gather
@@ -35,7 +35,7 @@ jobs:
       uses: andstor/copycat-action@v2.0.0
       with:
         personal_token: ${{ secrets.copykey }}
-        src_path: doc/en_US/.
+        src_path: doc/en_us/.
         dst_path: /doc/_posts/en_us/gathering
         dst_owner: ArthusLiang
         dst_repo_name: gather

@@ -4,7 +4,8 @@
 
 > mframe
 
-这篇文章将会介绍如何使用mframe创建canvas动画，使用相同的api，你甚至可以用来播放音乐。
+这篇文章将会介绍如何使用mframe创建canvas动画，使用相同的api，你甚至可以用来
+播放音乐。
 
 #### HTML
 
